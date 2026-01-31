@@ -1,0 +1,9 @@
+streamlit
+python-dotenv
+spacy
+spacy-langdetect
+langdetect
+nltk
+python-docx
+PyPDF2
+openai
