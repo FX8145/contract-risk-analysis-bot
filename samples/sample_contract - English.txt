@@ -1,0 +1,36 @@
+This Service Agreement (“Agreement”) is made and entered into on 15 January 2026, between BrightTech Solutions Pvt. Ltd., having its registered office at Chennai, Tamil Nadu (“Service Provider”), and Arun Kumar, residing at Bengaluru, Karnataka (“Client”).
+
+Scope of Services
+The Service Provider shall develop, deploy, and maintain a customized cloud-based software dashboard for the Client. Additional features may be included on a “best effort basis” depending on resource availability.
+
+Payment Terms
+The Client shall pay ₹30,000 per month for the services. Payment shall be made within 15 days of receiving an invoice. Late payments may attract a penalty fee as mentioned in Clause 8.
+
+Duration & Auto-Renewal
+This Agreement is valid for 12 months from the date of signing and shall automatically renew every year unless either party provides a 60-day written notice prior to renewal.
+
+Confidentiality
+Both parties must maintain strict confidentiality of all sensitive information. However, the term “confidential information” is subject to reasonable interpretation, which may vary depending on the situation.
+
+Intellectual Property Rights
+All IP created under this project shall remain with the Client. The Service Provider shall not reuse, redistribute, or transfer any part of the code or design without written approval. Violation of this clause may lead to IP-related penalties.
+
+Obligations of the Service Provider
+The Service Provider shall:
+a. Deliver updates within the mutually agreed timelines.
+b. Make “commercially reasonable efforts” to fix bugs reported by the Client.
+c. Ensure the application uptime is at least 98% per quarter.
+
+Obligations of the Client
+The Client must provide accurate project requirements, timely feedback, and access to relevant systems. Failure to do so may affect delivery timelines.
+
+Penalty & Indemnity
+In case of misuse of services or late payments, the Client may be required to pay penalty charges. The Service Provider shall not be liable for losses arising due to third-party failures. The Client agrees to indemnify the Service Provider for damages caused by improper data usage.
+
+Termination
+Either party may terminate this Agreement with a 45-day notice. Immediate termination may occur in case of breach of confidentiality or IP violation.
+
+Governing Law & Jurisdiction
+This Agreement shall be governed by the laws of India, and disputes shall be resolved exclusively under the Chennai jurisdiction.
+
+IN WITNESS WHEREOF, both parties hereby sign and agree to the terms stated above.
