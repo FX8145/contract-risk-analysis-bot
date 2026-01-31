@@ -18,27 +18,6 @@ AI-powered multilingual contract analyzer built using GPT-5.2, capable of identi
 
 ✔ Supports .txt contracts
 
-📂 Project Structure
-contract-risk-bot/
-│── app.py
-│── requirements.txt
-│── README.md
-│── .env
-│
-├── utils/
-│   ├── llm_reasoner.py
-│   ├── multilingual_extractor.py
-│   ├── multilingual_obligations.py
-│   ├── multilingual_risk_detector.py
-│   ├── loader.py
-│   └── parser.py
-│
-├── samples/
-│   ├── sample_contract - English.txt
-│   └── sample_contract - Tamil.txt
-│
-└── outputs/
-    └── results.json
 
 🛠 Installation
 1️⃣ Clone Repository
@@ -81,3 +60,4 @@ OpenAI GPT-5.2
 
 
 spaCy / NLTK
+
