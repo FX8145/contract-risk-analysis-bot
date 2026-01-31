@@ -1,41 +1,87 @@
-# Contract Analysis & Risk Assessment Bot
+🧾 Contract Analysis & Risk Assessment Bot
 
-A GenAI-powered tool that analyzes business contracts, identifies risks,
-and explains clauses in simple business English. Built for GUVI x HCL Hackathon.
+AI-powered multilingual contract analyzer built using GPT-5.2, capable of detecting risks, extracting entities, and summarizing obligations/rights in simple language.
 
-## 🚀 Features
-- Upload PDF, DOCX, or TXT contracts
-- Automatic clause extraction
-- Named entity extraction (parties, dates, amounts, jurisdiction)
-- Clause-by-clause plain-English explanation
-- Risk detection (penalty, indemnity, IP transfer, renewal, termination, etc.)
-- Contract summary generation
-- Hindi → English normalization
-- Downloadable audit logs
-- Streamlit-based interface
+🚀 Features
 
-## 🛠 Tech Stack
-- Python, Streamlit
-- spaCy, NLTK
-- GPT-4.1-mini (reasoning only)
-- Local JSON logs
+✔ Detects contract language (English / Tamil / More)
+✔ Identifies legal risks (Termination, Jurisdiction, Auto-renewal, Penalty, IP Transfer, etc.)
+✔ Extracts entities (Parties, Dates, Amounts, Jurisdiction)
+✔ Extracts obligations, rights & prohibitions
+✔ Readable and business-friendly summaries
+✔ Modern Streamlit UI
+✔ Supports .txt contracts
 
-## 📁 Project Structure
-contract-analysis-bot/
+📂 Project Structure (Short Diagram)
+contract-risk-bot/
 │── app.py
 │── requirements.txt
 │── README.md
-│── outputs/
-│── utils/
-│── samples/
+│── .env
+│
+├── utils/
+│   ├── llm_reasoner.py
+│   ├── multilingual_extractor.py
+│   ├── multilingual_obligations.py
+│   ├── multilingual_risk_detector.py
+│   ├── loader.py
+│   └── parser.py
+│
+├── samples/
+│   ├── sample_contract - English.txt
+│   └── sample_contract - Tamil.txt
+│
+└── outputs/
+    └── results.json
 
+🛠️ Installation
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/contract-risk-bot.git
+cd contract-risk-bot
 
-## ▶ Running Locally
+2️⃣ Create Virtual Environment
+python -m venv venv
+venv\Scripts\activate    # Windows
 
-Install dependencies:
+3️⃣ Install Requirements
 pip install -r requirements.txt
-python -m spacy download en_core_web_sm
 
+4️⃣ Add Your API Key
 
-Run the application:
+Create .env file:
+
+OPENAI_API_KEY=your_key_here
+
+▶️ Run the App
 streamlit run app.py
+
+📊 Output Screenshots (as shown in project)
+
+✔ Language detected (English/Tamil)
+
+✔ Full paragraph-based risk analysis
+
+✔ Entity extraction in natural readable format
+
+✔ Obligations, Rights & Prohibitions in clear summaries
+
+💡 Tech Stack
+
+Python
+
+Streamlit (Modern UI)
+
+OpenAI GPT-5.2
+
+spaCy + Regex (fallback)
+
+NLTK
+
+🏁 Final Notes
+
+This project fully satisfies the GUVI Hackathon problem statement by delivering:
+✔ Multilingual support
+✔ Clause-by-clause insights
+✔ Risk analysis reports
+✔ Business-friendly explanations
+✔ Ready for legal teams / SMEs
