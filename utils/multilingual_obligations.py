@@ -2,15 +2,11 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 
-# Force-load .env outside utils
 ENV_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env")
 load_dotenv(ENV_PATH)
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-# ----------------------------------------
-# Extract Obligations, Rights, Prohibitions
-# ----------------------------------------
 def extract_obligations_rights(text, lang="en"):
 
     prompt = f"""
@@ -43,7 +39,6 @@ def extract_obligations_rights(text, lang="en"):
 
     result = response.choices[0].message["content"]
 
-    # Safe JSON parsing
     try:
         import json
         return json.loads(result)
@@ -54,3 +49,4 @@ def extract_obligations_rights(text, lang="en"):
             "PROHIBITIONS": [],
             "raw": result
         }
+
